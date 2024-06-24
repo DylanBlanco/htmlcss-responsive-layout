@@ -1,0 +1,44 @@
+/*
+reset
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+debug
+*/
+.debug header {
+    background-color: sandybrown;
+    border: 1px dashed black;
+}
+.debug main {
+    background-color: coral;
+    border: 1px dashed black;
+}
+.debug footer {
+    background-color: grey;
+    border: 1px dashed black;
+}
+
+/*
+general
+*/
+.container{
+    max-height: 1000px;
+    margin: 0 auto;
+}
+
+/*
+header
+*/
+
+/*
+main
+*/
+
+/*
+footer
+*/
