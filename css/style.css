@@ -10,6 +10,7 @@ html {
     font-family: "PT Sans", sans-serif;
 }
 
+
 /************
 preject color
 *************/
@@ -26,8 +27,10 @@ preject color
 main {
     background-color: #9692E4;
 }
-main card{
+.main .row .card {
     background-color: #B5DDFF;
+}
+main .card{
     color: #0084FD;
     background-color: #9692E4;
 }
@@ -45,22 +48,27 @@ main text {
 general
 ************/
 
+/*header*/
 .container {
     margin: 0 auto;
     width: 576px;
 }
 body .row {
     width: 80%;
+    margin: 0 auto;
 }
 img {
     max-width: 100%;
+    
 }
 ul {
     list-style: none;
 }
-i {
+.header i {
     font-size: 1.5rem;
 }
+
+/*main*/
 
 .button {
     padding: 5px;
@@ -100,7 +108,42 @@ header ul {
 /************
 main
 ************/
+.main .row .card {
+    display: block;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 20px 0;
+}
 
 /************
 footer
 ************/
+
+
+/************
+responive tablet
+************/
+
+@media screen and (min-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .main .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main .row .card {
+        width: calc(100%/3);
+        height: 100%;
+    }
+    .main .row .special-card {
+        width: calc((100%/3)*2);
+    }
+}
+
+/************
+responsive desktop
+************/
+@media screen and (min-width: 992px) {
+    
+}
