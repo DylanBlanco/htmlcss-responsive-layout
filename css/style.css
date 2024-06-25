@@ -22,7 +22,7 @@ html {
 }
 
 /************
-preject color
+color
 *************/
 
 /*header*/
@@ -50,6 +50,37 @@ header .container i {
     color: var(--header-blue);
 }
 
+.main .purple-section {
+    background-color: var(--main-purple);
+}
+.main .purple-section .row .card {
+    background-color: var(--white);
+}
+.main .purple-section .row .card h2 {
+    color: black;
+}
+.main .purple-section .row .purple-card h2 {
+    color: var(--white);
+}
+.main .purple-section .row .purple-card p {
+    color: var(--white);
+}
+.main .purple-section .row .card i {
+    background-color: var(--main-purple);
+}
+
+.main .white-section .row h3 {
+    color: var(--main-purple);
+}
+.main .white-section .row .purple-card {
+    background-color: var(--main-purple);  
+}
+.main .white-section .row .purple-card p {
+    color: var(--white);  
+}
+.main .white-section .row .purple-card h2 {
+    color: var(--white);  
+}
 /*footer*/
 .footer.container {
     color: var(--footer-yellow);
@@ -66,7 +97,7 @@ general
     width: 576px;
 }
 body .row {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -82,6 +113,9 @@ ul {
 }
 
 /*main*/
+.img-phone {
+    width: 250px;
+}
 .button {
     padding: 10px 50px;
     border-radius: 20px;
@@ -96,7 +130,14 @@ ul {
 .button:active {
     transition: 1.5s;
     border: 2px solid var(--hover-color);
-}   
+}
+
+.testimonial {
+    text-align: center;
+}
+.testimonial > * {
+    margin-bottom: 30px;
+}
 
 
 /************
@@ -131,6 +172,9 @@ main
     margin: 20px 0;
     padding: 20px;
 }   
+.main .white-section .row {
+    padding: 50px 0;
+}
 .main .row .card h2 {
     margin-bottom: 20px;
 }
@@ -152,6 +196,20 @@ main
 }
 .main .row .special-card :nth-child(2) {
     padding-bottom: 0;
+}
+
+.main .purple-section .row {
+    padding: 50px 0;
+}
+.main .purple-section .row .purple-card {
+    background: none;
+}
+.main .purple-section .row .card i {
+    padding: 20px;
+    border-radius: 50%;
+}
+.main .white-section .row .purple-card img {
+    border-radius: 50%;
 }
 /************
 footer
@@ -176,6 +234,13 @@ responive tablet
     }
     .main .row .special-card {
         width: calc((100% / 3) * 2);
+    }
+    .main .purple-section .row .card {
+        width: 100%;
+    }
+    .main .white-section .row .purple-card {
+        width: 100%;
+        display: flex;
     }
 }
 
