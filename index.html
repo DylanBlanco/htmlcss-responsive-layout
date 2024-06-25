@@ -3,25 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Responsive Layout</title>
+
+        <!--link google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--link style sheet-->
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body class="debug">
+
+    <body class="">
         <!--HEADER-->
-        <header>
-            <div class="container header-container">
-                <div class="header-content">HEADER</div>
+        <header class="header container">
+            <div class="row">
+                <div><img src="./img/logo.png" alt="logo"></div>
+                <div class="desk-bar"><i class="fa-solid fa-bars"></i></div>
+                <div class="desk-list">
+                    <ul>
+                        <li><button class="button">Testimonials</button></li>
+                        <li><button class="button">Planning</button></li>
+                        <li><button class="button">Features</button></li>
+                        <li><button class="button">About Us</button></li>
+                        <li><button class="button white">Get Started</button></li>
+                    </ul>
+
+                </div>
             </div>
         </header>
         
         <!--MAIN-->
-        <main class="container main-container">
-            <div class="main-content">MAIN</div>
+        <main class="main container">
+            <div class="row">
+                main
+            </div>
         </main>
 
         <!--FOOTER-->
-        <footer class="container footer-container">
-            <div class="footer-content">FOOTER</div>
+        <footer class="footer container">
+            <div class="row">FOOTER</div>
         </footer>
     </body>
 </html>

@@ -6,39 +6,101 @@ reset
     padding: 0;
     box-sizing: border-box;
 }
-
-/*
-debug
-*/
-.debug header {
-    background-color: sandybrown;
-    border: 1px dashed black;
-}
-.debug main {
-    background-color: coral;
-    border: 1px dashed black;
-}
-.debug footer {
-    background-color: grey;
-    border: 1px dashed black;
+html {
+    font-family: "PT Sans", sans-serif;
 }
 
-/*
+/************
+preject color
+*************/
+
+/*header*/
+.header.container {
+    background-color:#0084FD;
+}
+.header .row > div {
+    color: white;
+}
+
+/*main*/
+main {
+    background-color: #9692E4;
+}
+main card{
+    background-color: #B5DDFF;
+    color: #0084FD;
+    background-color: #9692E4;
+}
+main text {
+    color: #5B6F80;
+}
+
+/*footer*/
+.footer.container {
+    color: #FDC15F;
+    background-color: #333333;
+}
+
+/************
 general
-*/
-.container{
-    max-height: 1000px;
+************/
+
+.container {
     margin: 0 auto;
+    width: 576px;
+}
+body .row {
+    width: 80%;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+i {
+    font-size: 1.5rem;
 }
 
-/*
+.button {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: none;
+}
+.button:hover {
+    padding: 2px;
+    transition: 0.5s;
+}
+
+
+/************
 header
-*/
+************/
+.header .row {
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header .row > div {
+    align-content: center;
+}
 
-/*
+
+header ul {
+    display: flex;
+}
+
+.desk-list {
+    display: none;
+}
+
+
+/************
 main
-*/
+************/
 
-/*
+/************
 footer
-*/
+************/
