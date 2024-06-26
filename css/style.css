@@ -82,7 +82,7 @@ header .container i {
     color: var(--white);  
 }
 
-.main .second-purple .row > h1 {
+.main .second-purple .row div > h1 {
     color: white;
 }
 .main .second-purple .row .purple-button {
@@ -320,17 +320,39 @@ responive tablet
         text-align: center;
     }
 
-    .main .second-white .row > * {
-        width: 45%;
+    .main .second-purple .row .row-card-purple {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .main .second-white .row div > * {
-        margin: 20px 0;
+    .main .second-purple .row-card-purple .card {
+        width: calc((100%/3)-20px);
     }
+    
 }
 
 /************
 responsive desktop
 ************/
 @media screen and (min-width: 992px) {
+    .main .row .special-card {
+        display: flex;
+    }
+    .main .row .special-card > div {
+        width: 50%;
+    }
 
+    .main .purple-section .row .card {
+        width: 50%;
+    }
+    .main .second-purple .row .row-card-purple .card {
+        width: 30%;
+    }
+
+    .main .second-white .row {
+        display: flex;
+    }
+    .main .second-white .row > div {
+        width: 40%;
+    }
 }
