@@ -81,6 +81,23 @@ header .container i {
 .main .white-section .row .purple-card h2 {
     color: var(--white);  
 }
+
+.main .second-purple .row > h1 {
+    color: white;
+}
+.main .second-purple .row .purple-button {
+    background-color: var(--main-purple);
+}
+.main .second-purple .row .card > *:not(p, .purple-button) {
+    color: var(--main-purple);
+}
+
+.main .second-white .row .purple-text {
+    color: var(--main-purple);
+}
+.main .second-white .row .purple-button {
+    background-color: var(--main-purple);
+}
 /*footer*/
 .footer.container {
     color: var(--footer-yellow);
@@ -97,7 +114,7 @@ general
     width: 576px;
 }
 body .row {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -139,6 +156,12 @@ ul {
     margin-bottom: 30px;
 }
 
+.main .second-purple .row > h1 {
+    text-align: center;
+}
+.main .second-purple .row .card > * {
+    margin: 20px 0;
+}
 
 /************
 header
@@ -211,6 +234,19 @@ main
 .main .white-section .row .purple-card img {
     border-radius: 50%;
 }
+
+.main .second-white .row div > * {
+    margin: 30px 0;
+}
+.main .second-white .row h1 {
+    font-size: 3rem;
+}
+.main .second-white .row .purple-p {
+    font-size: 2rem;
+}
+.main .second-white .row img {
+    border-radius: 50%;
+}
 /************
 footer
 ************/
@@ -241,6 +277,20 @@ responive tablet
     .main .white-section .row .purple-card {
         width: 100%;
         display: flex;
+    }
+
+    .main .second-purple .row .card {
+        width: 45%;
+    }
+    .main .second-purple .row > h1 {
+        text-align: center;
+    }
+
+    .main .second-white .row > * {
+        width: 45%;
+    }
+    .main .second-white .row div > * {
+        margin: 20px 0;
     }
 }
 
