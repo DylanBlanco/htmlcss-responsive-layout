@@ -32,6 +32,10 @@ color
 header .container i {
     color: white;
 }
+.header .row .desk-list ul button {
+    background-color: var(--white);
+    color: var(--footer-background);
+}
 
 /*main*/
 .main .row .card {
@@ -136,8 +140,17 @@ img {
 ul {
     list-style: none;
 }
+.header .row .desk-list ul button {
+    padding: 10px;
+}
 .header i {
     font-size: 1.5rem;
+}
+.header .row .desk-list ul li {
+    padding: 0 10px;
+}
+.header .row .desk-list ul a {
+    text-decoration: none;
 }
 
 /*main*/
@@ -197,6 +210,7 @@ header
 
 header ul {
     display: flex;
+    align-items: center;
 }
 
 .desk-list {
@@ -335,6 +349,13 @@ responive tablet
 responsive desktop
 ************/
 @media screen and (min-width: 992px) {
+    .desk-list {
+        display: block;
+    }
+    .desk-bar {
+        display: none;
+    }
+
     .main .row .special-card {
         display: flex;
     }
