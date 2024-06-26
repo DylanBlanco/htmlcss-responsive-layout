@@ -103,7 +103,18 @@ header .container i {
     color: var(--footer-yellow);
     background-color: var(--footer-background);
 }
-
+.footer .purple-section {
+    background-color: var(--main-purple);
+}
+footer  .row h3 {
+    color: var(--white);
+}
+footer  .row h2 {
+    color: var(--white);
+}
+footer  .row p {
+    color: var(--white);
+}
 /************
 general
 ************/
@@ -144,10 +155,6 @@ ul {
     transition: 0.5s;
     color: var(--hover-color);
 }
-.button:active {
-    transition: 1.5s;
-    border: 2px solid var(--hover-color);
-}
 
 .testimonial {
     text-align: center;
@@ -161,6 +168,17 @@ ul {
 }
 .main .second-purple .row .card > * {
     margin: 20px 0;
+}
+
+/*footer*/
+.footer .row > p {
+    font-size: 0.8rem;
+}
+.footer .purple-section .row > h1 {
+    font-size: 4rem;
+}
+.footer .purple-section .row > h2 {
+    font-size: 2rem;
 }
 
 /************
@@ -250,7 +268,23 @@ main
 /************
 footer
 ************/
-
+.footer .purple-section .row {
+    padding: 50px 0;
+}
+.footer .purple-section .row > * {
+    margin: 20px 0;
+    text-align: center;
+}
+.footer .purple-section .row button {
+    border: none;
+    border-radius: 20px;
+    padding: 15px 50px;
+    color: var(--main-purple);
+}
+.footer .black-section .row > * {
+    padding: 30px 0;
+    text-align: center;
+}
 
 /************
 responive tablet
